@@ -13,6 +13,11 @@
 		0C4BD7F41F27F7C600E05196 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BD7F31F27F7C600E05196 /* Assets.xcassets */; };
 		0C4BD7F71F27F7C600E05196 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BD7F51F27F7C600E05196 /* LaunchScreen.storyboard */; };
 		0C4BD8021F27F7C600E05196 /* To_Do_List_2_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4BD8011F27F7C600E05196 /* To_Do_List_2_0Tests.swift */; };
+		0C4BD80E1F27F7F000E05196 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4BD80C1F27F7F000E05196 /* Realm.framework */; };
+		0C4BD80F1F27F7F000E05196 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4BD80C1F27F7F000E05196 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0C4BD8101F27F7F000E05196 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4BD80D1F27F7F000E05196 /* RealmSwift.framework */; };
+		0C4BD8111F27F7F000E05196 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4BD80D1F27F7F000E05196 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0C4BD8151F27FC2200E05196 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4BD8141F27FC2200E05196 /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +30,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0C4BD8121F27F7F000E05196 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0C4BD8111F27F7F000E05196 /* RealmSwift.framework in Embed Frameworks */,
+				0C4BD80F1F27F7F000E05196 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0C4BD7E91F27F7C600E05196 /* To Do List 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To Do List 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C4BD7EC1F27F7C600E05196 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +56,9 @@
 		0C4BD7FD1F27F7C600E05196 /* To Do List 2.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "To Do List 2.0Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C4BD8011F27F7C600E05196 /* To_Do_List_2_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_List_2_0Tests.swift; sourceTree = "<group>"; };
 		0C4BD8031F27F7C600E05196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C4BD80C1F27F7F000E05196 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		0C4BD80D1F27F7F000E05196 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		0C4BD8141F27FC2200E05196 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C4BD8101F27F7F000E05196 /* RealmSwift.framework in Frameworks */,
+				0C4BD80E1F27F7F000E05196 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +84,8 @@
 		0C4BD7E01F27F7C600E05196 = {
 			isa = PBXGroup;
 			children = (
+				0C4BD80C1F27F7F000E05196 /* Realm.framework */,
+				0C4BD80D1F27F7F000E05196 /* RealmSwift.framework */,
 				0C4BD7EB1F27F7C600E05196 /* To Do List 2.0 */,
 				0C4BD8001F27F7C600E05196 /* To Do List 2.0Tests */,
 				0C4BD7EA1F27F7C600E05196 /* Products */,
@@ -80,6 +107,7 @@
 				0C4BD7EC1F27F7C600E05196 /* AppDelegate.swift */,
 				0C4BD7EE1F27F7C600E05196 /* ViewController.swift */,
 				0C4BD7F01F27F7C600E05196 /* Main.storyboard */,
+				0C4BD8141F27FC2200E05196 /* AddViewController.swift */,
 				0C4BD7F31F27F7C600E05196 /* Assets.xcassets */,
 				0C4BD7F51F27F7C600E05196 /* LaunchScreen.storyboard */,
 				0C4BD7F81F27F7C600E05196 /* Info.plist */,
@@ -106,6 +134,8 @@
 				0C4BD7E51F27F7C600E05196 /* Sources */,
 				0C4BD7E61F27F7C600E05196 /* Frameworks */,
 				0C4BD7E71F27F7C600E05196 /* Resources */,
+				0C4BD8121F27F7F000E05196 /* Embed Frameworks */,
+				0C4BD8131F27F7FD00E05196 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -194,6 +224,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C4BD8131F27F7FD00E05196 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0C4BD7E51F27F7C600E05196 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -201,6 +247,7 @@
 			files = (
 				0C4BD7EF1F27F7C600E05196 /* ViewController.swift in Sources */,
 				0C4BD7ED1F27F7C600E05196 /* AppDelegate.swift in Sources */,
+				0C4BD8151F27FC2200E05196 /* AddViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +388,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "To Do List 2.0/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aaronelijah.To-Do-List-2-0";
@@ -353,6 +404,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "To Do List 2.0/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aaronelijah.To-Do-List-2-0";
