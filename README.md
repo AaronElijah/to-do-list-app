@@ -1,8 +1,10 @@
 # to-do-list-app
 
-To use the app is simple
+Note: This app was created as a 24 hour test challenge and as you would expect, it is not a polished product. However it does demostrate what I can do in short space of time, using the Realm mobile database module.
 
-On the inital view
+To use the app is simple.
+
+On the inital view: -
 
 1. Add button takes you to the other view where you can add new tasks, with a title, priority and date - the date is always kept to the current date
 2. Date sort takes the tasks there and sorts them according to date - with the oldest being at the top of the table
